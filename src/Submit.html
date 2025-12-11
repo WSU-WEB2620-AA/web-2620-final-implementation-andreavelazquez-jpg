@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wonder – Submit Your Film</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body class="wonder-body">
+
+  <header class="wonder-header">
+    <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="wonder-logo text-decoration-none">WONDER</a>
+
+      <nav class="d-none d-md-block">
+        <ul class="nav wonder-main-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="list.html">My List</a></li>
+          <li class="nav-item"><a class="nav-link" href="Movie.html">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Genre’s</a></li>
+          <li class="nav-item"><a class="nav-link active" href="submit.html">Submit</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-3">
+  <span class="wonder-search">🔍</span>
+
+  <div class="submit-wrapper text-center">
+    <a href="submit.html" class="wonder-submit-circle">+</a>
+    <span class="submit-label d-none d-md-block">Submit</span>
+  </div>
+
+  <a href="account.html" class="wonder-profile-circle">A</a>
+</div>
+  </header>
+
+  <main class="wonder-main submit-main">
+    <section class="submit-section">
+      <div class="submit-card">
+
+        <h1 class="submit-title">Submit Your Project</h1>
+        <p class="submit-intro">
+          Share your film, series, or passion project with Wonder. 
+          Tell us a bit about your work and where we can watch it.
+        </p>
+
+        <form class="submit-form">
+
+          <div class="submit-row">
+            <div class="submit-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Aris Jellyfish" required>
+            </div>
+
+            <div class="submit-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="submit-field">
+            <label for="title">Project Title</label>
+            <input type="text" id="title" name="title" placeholder="Blue Project" required>
+          </div>
+
+          <div class="submit-row">
+            <div class="submit-field">
+              <label for="type">Project Type</label>
+              <select id="type" name="type" required>
+                <option value="">Choose one…</option>
+                <option>Short Film</option>
+                <option>Feature Film</option>
+                <option>Series / TV</option>
+                <option>Documentary</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="submit-field">
+              <label for="genre">Genre</label>
+              <select id="genre" name="genre">
+                <option value="">Choose one…</option>
+                <option>Action</option>
+                <option>Drama</option>
+                <option>Comedy</option>
+                <option>Fantasy</option>
+                <option>Horror</option>
+                <option>Romance</option>
+                <option>Sci-Fi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="submit-field">
+            <label for="logline">Logline</label>
+            <textarea id="logline" name="logline" rows="3"
+              placeholder="One–two sentence summary of your story."></textarea>
+          </div>
+
+          <div class="submit-field">
+            <label for="link">Link to Your Video (YouTube, Vimeo, etc.)</label>
+            <input type="url" id="link" name="link" placeholder="https://">
+          </div>
+
+          <div class="submit-field">
+            <label>Project Status</label>
+            <div class="submit-options">
+              <label><input type="radio" name="status" value="finished"> Finished</label>
+              <label><input type="radio" name="status" value="in-progress"> In Progress</label>
+            </div>
+          </div>
+
+          <div class="submit-field submit-terms">
+            <label>
+              <input type="checkbox" required>
+              I agree that this is my original work and I’m allowed to share it.
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Project</button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="wonder-footer mt-4">
+    <div class="container py-4">
+
+      <div class="row text-center text-md-start">
+
+        <div class="col-12 col-md-3 mb-3">
+          <h5 class="footer-title">Wonder</h5>
+          <p class="footer-text">Streaming the unimaginable.</p>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="footer-heading">Browse</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Movie.html">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Genres</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3 mb-3">
+          <h6 class="footer-heading">Follow Us</h6>
+          <div class="footer-social">
+            <a href="#">🌐</a>
+            <a href="#">🐦</a>
+            <a href="#">📸</a>
+            <a href="#">🎬</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center mt-3">
+        <p class="footer-small">&copy; 2025 Wonder Studios. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>
